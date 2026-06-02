@@ -25,7 +25,7 @@ var winner = document.querySelector('#winner');
 var loser = document.querySelector('#loser');
 
 var cadena = ''; // Color List
-var saldo = 10000; // Saldo
+var saldo = 20; // Saldo
 var sorteados = []; // List sorteados
 
 // Objects
@@ -98,7 +98,7 @@ function limpiarGanador(){
 tryAgain.addEventListener('click', addTry);
 
 function addTry(){
-    saldo = 10000;
+    saldo = 20;
     divsaldo.innerHTML = `<label id="saldo" class="badge badge-danger" style="font-size: 15px;" for="">$${saldo}</label>`;
     tryAgain.innerHTML = ``;
     mostrarsaldo();
@@ -143,27 +143,27 @@ function time(){
 /* ####################### BUTTONS BET ####################### */
 bet1.addEventListener('click', function(e){
     e.preventDefault();
-    numero.value = "500";
+    numero.value = "1";
 })
 
 bet2.addEventListener('click', function(e){
     e.preventDefault();
-    numero.value = "1000";
+    numero.value = "2";
 })
 
 bet3.addEventListener('click', function(e){
     e.preventDefault();
-    numero.value = "2000";
+    numero.value = "5";
 })
 
 bet4.addEventListener('click', function(e){
     e.preventDefault();
-    numero.value = "5000";
+    numero.value = "10";
 })
 
 bet5.addEventListener('click', function(e){
     e.preventDefault();
-    numero.value = "10000";
+    numero.value = "20";
 })
 
 /* ######################### BUTTONS ######################### */
